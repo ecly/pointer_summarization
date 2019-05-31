@@ -1,0 +1,11 @@
+ujson
+nltk
+pytorch
+scikit-learn
+gensim
+py-rouge
+pyrouge
+matplotlib
+tensorboardX
+pyyaml
+tqdm

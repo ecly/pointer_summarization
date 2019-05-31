@@ -1,0 +1,45 @@
+# general
+output_file: "log/base.tar"
+epochs: 15
+batch_size: 16
+validator: "rouge"
+validate_every: 0 # 0 = every epoch
+validation_size: 13368 # size of validation set
+early_stopping: true
+patience: 1
+
+# data config
+vocab_file: "data/cnndm_abisee.vocab"
+train_file: "data/cnndm_abisee_train.tsv"
+valid_file: "data/cnndm_abisee_dev.tsv"
+
+# network config
+attn_model: "bahdanau"
+rnn_cell: "gru"
+embed_file: "data/glove100.w2v"
+pointer: true
+coverage: true
+output_activation: null
+
+# hyper params
+vocab_size: 10000
+hidden_size: 256
+embed_size: 100
+attn_feature_size: 512
+embedding_dropout: 0.1
+output_dropout: 0.1
+coverage_loss_weight: 0.25
+
+# optimization
+optimizer: "adam"
+learning_rate: 0.001
+learning_rate_decay: 0.1
+learning_rate_patience: 0
+
+# evaluation config
+beam_size: 4
+min_decode_steps: 45
+max_decode_steps: 120
+length_normalize: "wu"
+length_normalize_alpha: 2.2
+block_ngram_repeat: 3
