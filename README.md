@@ -1,7 +1,6 @@
 # Pointer Summarization
 
-Accompanying code for Master's Thesis written at the IT-University in Copenhagen on *Neural Automatic Summarization*.
-Focused around reimplementing, optimizing and improving the Pointer Generator from [See et al. 2017](https://arxiv.org/abs/1704.04368).
+Accompanying code for Master's Thesis written at the IT-University in Copenhagen on *Neural Automatic Summarization*. The thesis is available [here](thesis.pdf) and focused on reimplementing, optimizing and improving the Pointer Generator from [See et al. 2017](https://arxiv.org/abs/1704.04368).
 For all the experiments described in the thesis, refer to the [experiments](experiments) folder for corresponding configuration files.
 For the chunk-based approaches described in the thesis, a new repository will be published in the near future. 
 All code has been formatted using [black](https://github.com/python/black).
